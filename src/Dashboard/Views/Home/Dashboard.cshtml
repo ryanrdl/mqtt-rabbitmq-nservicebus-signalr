@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<script type="text/javascript" src="~/Scripts/application/dashboardController.js"></script>
+<div class="ng-cloak">
+    <div ng-controller="dashboardController">
+        <h2>Dashboard</h2>
+
+        <h3>Temperature</h3>
+        <button ng-click="actions.addNewTemperatureDevice()">Add New Temperature Device</button>
+        <div class="row">
+            <div class="col-md-6"><canvas id="temperature" width="575" height="300"></canvas></div>
+            <div class="col-md-6">
+                <table style="width: 100%">
+                    <thead>
+                    <tr>
+                        <th>DeviceId</th>
+                        <th>Average Value</th>
+                        <th>Above Upper Limit</th>
+                        <th>Below Lower Limit</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="device in ui.temperatureDevices">
+                        <td><span ng-style="{{device.style}}">{{device.id}}</span></td>
+                        <td>{{device.avg}}</td>
+                        <td>{{device.above}}</td>
+                        <td>{{device.below}}</td>
+                        <td><a href="javascript:void(0)" ng-click="actions.removeTemperatureDevice(device.id)"></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <h3>Humidity</h3>
+        <button ng-click="actions.addNewHumidityDevice()">Add New Humidity Device</button>
+        <div class="row">
+            <div class="col-md-6"><canvas id="humidity" width="575" height="300"></canvas></div>
+            <div class="col-md-6">
+                <table style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>DeviceId</th>
+                            <th>Average Value</th>
+                            <th>Above Upper Limit</th>
+                            <th>Below Lower Limit</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="device in ui.humidityDevices">
+                            <td><span ng-style="{{device.style}}">{{device.id}}</span></td>
+                            <td>{{device.avg}}</td>
+                            <td>{{device.above}}</td>
+                            <td>{{device.below}}</td>
+                            <td><a href="javascript:void(0)" ng-click="actions.removeHumidityDevice(device.id)"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div> 
