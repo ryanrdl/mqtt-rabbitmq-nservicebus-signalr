@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 using Messages;
 using Microsoft.AspNet.SignalR;
-using Microsoft.AspNet.SignalR.Infrastructure;
 
 namespace Dashboard.Controllers
 {
@@ -9,9 +8,7 @@ namespace Dashboard.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
-            return View();
+            return RedirectToAction("Dashboard");
         }
 
         public ActionResult Dashboard()
