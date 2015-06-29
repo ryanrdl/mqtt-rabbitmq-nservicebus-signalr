@@ -8,10 +8,9 @@
 
         $scope.actions = {
             addNewTemperatureDevice: null,
-            removeTemperatureDevice: null,
-
+            removeTemperatureDevice: null, 
             addNewHumidityDevice: null,
-            removeHumidityDevice: null
+            removeHumidityDevice: null 
         };
 
         $scope.actions.addNewTemperatureDevice = function () {
@@ -30,13 +29,7 @@
             $http.post('/api/devices/humidity').success(function (deviceId) {
                 //console.log('command sent to add humidity device with id ' + deviceId);
             });
-        }
-
-        $scope.actions.removeHumidityDevice = function (deviceId) {
-            $http.delete('/api/devices/humidity?deviceId=' + deviceId).success(function () {
-                //console.log('command sent to delete humidity device with id ' + deviceId);
-            });
-        };
+        } 
 
         var temperatureChart = new SmoothieChart();
         temperatureChart.streamTo(document.getElementById("temperature"), 500);
@@ -79,7 +72,7 @@
                     avg: 0,
                     above: 0,
                     below: 0,
-                    style: { "color": color },
+                    style: { "color": color }, 
                     timeSeries: timeSeries
                 });
 
@@ -105,7 +98,7 @@
                     avg: 0,
                     above: 0,
                     below: 0,
-                    style: { "color": color },
+                    style: { "color": color }, 
                     timeSeries: timeSeries
                 });
 

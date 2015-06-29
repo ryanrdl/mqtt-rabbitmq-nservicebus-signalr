@@ -1,6 +1,4 @@
 ﻿using System.Web.Mvc;
-using Messages;
-using Microsoft.AspNet.SignalR;
 
 namespace Dashboard.Controllers
 {
