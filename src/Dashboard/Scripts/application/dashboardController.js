@@ -3,7 +3,7 @@
 
         $scope.ui = {
             temperatureDevices: [],
-            humidityDevices : []
+            humidityDevices: []
         }
 
         $scope.actions = {
@@ -37,10 +37,10 @@
                 //console.log('command sent to delete humidity device with id ' + deviceId);
             });
         };
-         
+
         var temperatureChart = new SmoothieChart();
         temperatureChart.streamTo(document.getElementById("temperature"), 500);
-         
+
         var humidityChart = new SmoothieChart();
         humidityChart.streamTo(document.getElementById("humidity"), 500);
 
@@ -61,8 +61,7 @@
             return color;
         }
 
-        hub.client.addTemperatureDevice = function (deviceId) {
-            //console.log('addTemperatureDevice ' + deviceId);
+        function addTemperatureDevice(deviceId) {
             var found = false;
             for (var i = 0; i < $scope.ui.temperatureDevices.length; i++) {
                 if ($scope.ui.temperatureDevices[i].id === deviceId) {
@@ -84,19 +83,11 @@
                     timeSeries: timeSeries
                 });
 
-                temperatureChart.addTimeSeries(timeSeries, { strokeStyle: color, lineWidth: 4 }); 
+                temperatureChart.addTimeSeries(timeSeries, { strokeStyle: color, lineWidth: 4 });
             }
-        };
+        }
 
-        hub.client.removeTemperatureDevice = function (deviceId) {
-            //console.log('removeTemperatureDevice ' + deviceId);
-            $scope.ui.temperatureDevices = _.filter($scope.ui.temperatureDevices, function (device) {
-                return device.id !== deviceId;
-            });
-        };
-
-        hub.client.addHumidityDevice = function (deviceId) {
-            //console.log('addHumidityDevice ' + deviceId);
+        function addHumidityDevice(deviceId) {
             var found = false;
             for (var i = 0; i < $scope.ui.humidityDevices.length; i++) {
                 if ($scope.ui.humidityDevices[i].id === deviceId) {
@@ -115,11 +106,28 @@
                     above: 0,
                     below: 0,
                     style: { "color": color },
-                    timeSeries : timeSeries
+                    timeSeries: timeSeries
                 });
 
-                humidityChart.addTimeSeries(timeSeries, { strokeStyle: color, lineWidth: 4 }); 
+                humidityChart.addTimeSeries(timeSeries, { strokeStyle: color, lineWidth: 4 });
             }
+        }
+
+        hub.client.addTemperatureDevice = function (deviceId) {
+            //console.log('addTemperatureDevice ' + deviceId);
+            addTemperatureDevice(deviceId);
+        };
+
+        hub.client.removeTemperatureDevice = function (deviceId) {
+            //console.log('removeTemperatureDevice ' + deviceId);
+            $scope.ui.temperatureDevices = _.filter($scope.ui.temperatureDevices, function (device) {
+                return device.id !== deviceId;
+            });
+        };
+
+        hub.client.addHumidityDevice = function (deviceId) {
+            //console.log('addHumidityDevice ' + deviceId);
+            addHumidityDevice(deviceId);
         };
 
         hub.client.removeHumidityDevice = function (deviceId) {
@@ -131,6 +139,7 @@
 
         hub.client.temperatureChanged = function (message) {
             //console.log('temperatureChanged ' + message.DeviceId);
+            addTemperatureDevice(message.DeviceId);
             for (var i = 0; i < $scope.ui.temperatureDevices.length; i++) {
                 if ($scope.ui.temperatureDevices[i].id === message.DeviceId) {
                     $scope.ui.temperatureDevices[i].avg = message.Average;
@@ -140,19 +149,9 @@
             }
         };
 
-        hub.client.humidityChanged = function (message) {
-            //console.log('humidityChanged ' + message.DeviceId);
-            for (var i = 0; i < $scope.ui.humidityDevices.length; i++) {
-                if ($scope.ui.humidityDevices[i].id === message.DeviceId) {
-                    $scope.ui.humidityDevices[i].avg = message.Average;
-                    $scope.ui.humidityDevices[i].timeSeries.append(new Date().getTime(), parseFloat(message.Average));
-                    break;
-                }
-            }
-        };
-
         hub.client.temperatureAboveThreshold = function (deviceId) {
             //console.log('temperatureAboveThreshold ' + deviceId);
+            addTemperatureDevice(deviceId);
             for (var i = 0; i < $scope.ui.temperatureDevices.length; i++) {
                 if ($scope.ui.temperatureDevices[i].id === deviceId) {
                     $scope.ui.temperatureDevices[i].above += 1;
@@ -163,6 +162,7 @@
 
         hub.client.temperatureBelowThreshold = function (deviceId) {
             //console.log('temperatureBelowThreshold ' + deviceId);
+            addTemperatureDevice(deviceId);
             for (var i = 0; i < $scope.ui.temperatureDevices.length; i++) {
                 if ($scope.ui.temperatureDevices[i].id === deviceId) {
                     $scope.ui.temperatureDevices[i].below += 1;
@@ -171,8 +171,21 @@
             }
         };
 
+        hub.client.humidityChanged = function (message) {
+            //console.log('humidityChanged ' + message.DeviceId);
+            addHumidityDevice(message.DeviceId);
+            for (var i = 0; i < $scope.ui.humidityDevices.length; i++) {
+                if ($scope.ui.humidityDevices[i].id === message.DeviceId) {
+                    $scope.ui.humidityDevices[i].avg = message.Average;
+                    $scope.ui.humidityDevices[i].timeSeries.append(new Date().getTime(), parseFloat(message.Average));
+                    break;
+                }
+            }
+        };
+
         hub.client.humidityAboveThreshold = function (deviceId) {
             //console.log('humidityAboveThreshold ' + deviceId);
+            addHumidityDevice(deviceId);
             for (var i = 0; i < $scope.ui.humidityDevices.length; i++) {
                 if ($scope.ui.humidityDevices[i].id === deviceId) {
                     $scope.ui.humidityDevices[i].above += 1;
@@ -183,6 +196,7 @@
 
         hub.client.humidityBelowThreshold = function (deviceId) {
             //console.log('humidityBelowThreshold ' + deviceId);
+            addHumidityDevice(deviceId);
             for (var i = 0; i < $scope.ui.humidityDevices.length; i++) {
                 if ($scope.ui.humidityDevices[i].id === deviceId) {
                     $scope.ui.humidityDevices[i].below += 1;
