@@ -16,17 +16,6 @@ namespace Dashboard.Controllers
             ViewBag.Title = "Dashboard";
 
             return View();
-        }
-
-        public ActionResult Test()
-        {
-            var context = GlobalHost.ConnectionManager.GetHubContext<DeviceHub>();
-            context.Clients.All.temperatureChanged(new AveragedHumidityUpdated
-            {
-                DeviceId = "dsf", 
-                Average = 213
-            });
-             return Content("done");
-        }
+        } 
     }
 }
