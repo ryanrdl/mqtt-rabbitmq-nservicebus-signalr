@@ -44,27 +44,15 @@
   <ItemGroup>
     <Compile Include="DeviceGateway\AddHumidityDevice.cs" />
     <Compile Include="DeviceGateway\AddTemperatureDevice.cs" />
-    <Compile Include="AveragedHumidityUpdated.cs" />
-    <Compile Include="AveragedTemperatureUpdated.cs" />
-    <Compile Include="DeviceHumidityAboveAcceptableThreshold.cs" />
-    <Compile Include="DeviceHumidityBelowAcceptableThreshold.cs" />
-    <Compile Include="DeviceTemperatureAboveAcceptableThreshold.cs" />
-    <Compile Include="DeviceTemperatureBelowAcceptableThreshold.cs" />
-    <Compile Include="ProximityDeviceStarted.cs" />
-    <Compile Include="ProximityDeviceStopped.cs" />
     <Compile Include="ProximitySensorDataReceived.cs" />
     <Compile Include="Helpers\NewColor.cs" />
-    <Compile Include="HumidityDeviceAdded.cs" />
-    <Compile Include="HumidityDeviceRemoved.cs" />
     <Compile Include="HumiditySensorDataReceived.cs" />
     <Compile Include="DeviceGateway\RemoveHumidityDevice.cs" />
     <Compile Include="DeviceGateway\RemoveTemperatureDevice.cs" />
     <Compile Include="ResultCode.cs" />
     <Compile Include="SensorData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TemperatureDeviceRemoved.cs" />
     <Compile Include="TemperatureSensorDataReceived.cs" />
-    <Compile Include="TemperatureDeviceAdded.cs" />
     <Compile Include="Topics.cs" />
   </ItemGroup>
   <ItemGroup>
