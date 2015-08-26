@@ -52,5 +52,26 @@ namespace Dashboard.Controllers
         {
             _.Bus.Send(new RemoveTemperatureDevice {DeviceId = deviceId});
         }
+
+        [Route("heartbeat"), HttpPost]
+        public async Task<string> StartHeartbeat()
+        {
+            ProximityDeviceStarted command = new ProximityDeviceStarted
+            {
+                DeviceId = Guid.NewGuid().ToString()
+            };
+
+            int result = await _.Bus.Send(command).Register();
+
+            if (result == ResultCode.OK) return command.DeviceId;
+
+            throw new HttpException((int) HttpStatusCode.BadRequest, "Unable to start device");
+        }
+
+        [Route("heartbeat"), HttpDelete]
+        public void StopHeartbeat([FromUri] string deviceId)
+        {
+            _.Bus.Send(new ProximityDeviceStopped {DeviceId = deviceId});
+        }
     }
 }

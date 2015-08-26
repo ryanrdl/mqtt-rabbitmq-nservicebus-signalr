@@ -5,7 +5,8 @@ namespace Messages
     public enum SensorType
     {
         Temperature = 100,
-        Humidity = 200
+        Humidity = 200,
+        Proximity = 300
     }
 
     public class SensorData

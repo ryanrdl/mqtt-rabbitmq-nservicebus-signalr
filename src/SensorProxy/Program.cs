@@ -49,6 +49,9 @@ namespace SensorProxy
 
                 if (e.Topic == Topics.Temperature)
                     _bus.Publish(new TemperatureSensorDataReceived(data));
+
+                if (e.Topic == Topics.Proximity)
+                    _bus.Publish(new ProximitySensorDataReceived(data));
             }
         } 
     }

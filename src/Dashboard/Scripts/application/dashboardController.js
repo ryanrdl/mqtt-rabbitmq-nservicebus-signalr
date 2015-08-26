@@ -37,6 +37,7 @@
         var humidityChart = new SmoothieChart();
         humidityChart.streamTo(document.getElementById("humidity"), 500);
 
+
         var hub = $.connection.deviceHub;
 
         var usedColors = [];
@@ -53,6 +54,32 @@
             }
             return color;
         }
+
+        var c = getColor();
+        var coapChart = new SmoothieChart();
+        coapChart.streamTo(document.getElementById("coap"), 500);
+        var t = new TimeSeries();
+        var d = {
+            id: 1,
+            avg: 0,
+            above: 0,
+            below: 0,
+            style: { "color": c },
+            timeSeries: t
+        };
+
+        coapChart.addTimeSeries(t, { strokeStyle: c, lineWidth: 4 });
+
+        var i = 0;
+        setInterval(function() {
+            var n = i++ % 5;
+            var v = 0;
+            if (n == 0) {
+                v = 1;
+            }
+
+            d.timeSeries.append(new Date().getTime(), v);
+        }, 1000);
 
         function addTemperatureDevice(deviceId) {
             var found = false;

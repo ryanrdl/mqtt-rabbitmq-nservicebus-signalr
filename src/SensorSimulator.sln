@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceGateway", "DeviceGate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoAP.NET", "CoAP.NET\CoAP.NET.csproj", "{45DB1E45-4831-4E4A-BB1E-AE92EEA182E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoapConsole", "CoapConsole\CoapConsole.csproj", "{394885AB-D203-4DAB-A61C-D98DB5F6A899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{45DB1E45-4831-4E4A-BB1E-AE92EEA182E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45DB1E45-4831-4E4A-BB1E-AE92EEA182E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45DB1E45-4831-4E4A-BB1E-AE92EEA182E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{394885AB-D203-4DAB-A61C-D98DB5F6A899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{394885AB-D203-4DAB-A61C-D98DB5F6A899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{394885AB-D203-4DAB-A61C-D98DB5F6A899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{394885AB-D203-4DAB-A61C-D98DB5F6A899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

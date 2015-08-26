@@ -2,7 +2,7 @@
 
 namespace Messages
 {
-    public class HumidityDeviceRemoved : IEvent
+    public class ProximityDeviceStarted : IEvent
     {
         public string DeviceId { get; set; }
     }

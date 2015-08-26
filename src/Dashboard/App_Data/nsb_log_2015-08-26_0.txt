@@ -1,0 +1,2224 @@
+﻿2015-08-26 07:45:42.504 INFO  DefaultFactory Logging to 'C:\Users\LitvakR\Documents\mqtt-rabbitmq-nservicebus-signalr\src\Dashboard\App_Data\' with level Info
+2015-08-26 07:45:42.595 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-26 07:45:42.598 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-26 07:45:42.601 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-26 07:45:42.604 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-26 07:45:42.607 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-26 07:45:42.727 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 3/8/2016 12:00:00 AM
+2015-08-26 07:45:42.761 INFO  NServiceBus.Features.UnicastBus Number of messages found: 17
+2015-08-26 07:45:42.851 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:42.878 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:42.903 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:42.933 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:42.944 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:42.956 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.120 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'JABIL\LitvakR' to group 'Performance Monitor Users' because the user is already in group.
+2015-08-26 07:45:43.141 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RabbitMqTransport
+Version: 3.0.0
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-26 07:45:43.167 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:45:43.170 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:45:43.175 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Secondary receiver for queue 'Dashboard.STP1COR3976LT' initiated with concurrency '1'
+2015-08-26 07:45:43.200 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.235 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:45:43.268 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:45:43.302 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:45:43.293 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:45:43.293 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:45:43.307 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:45:43.307 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:45:43.335 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:45:43.343 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:45:43.382 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.402 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.415 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.428 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.441 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.453 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.482 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.493 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.506 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:45:43.525 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:46:53.354 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=0, text="End of stream", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at System.IO.BinaryWriter.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrame(Frame frame)
+   at RabbitMQ.Client.Framing.Impl.Connection.WriteFrame(Frame f)
+   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state) , going to reconnect
+2015-08-26 07:46:53.364 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:29.384 INFO  DefaultFactory Logging to 'C:\Users\LitvakR\Documents\mqtt-rabbitmq-nservicebus-signalr\src\Dashboard\App_Data\' with level Info
+2015-08-26 07:49:29.467 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-26 07:49:29.468 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-26 07:49:29.471 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-26 07:49:29.472 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-26 07:49:29.474 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-26 07:49:29.666 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 3/8/2016 12:00:00 AM
+2015-08-26 07:49:29.700 INFO  NServiceBus.Features.UnicastBus Number of messages found: 17
+2015-08-26 07:49:29.806 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:29.826 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:29.834 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:29.857 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:29.863 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:29.871 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.028 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'JABIL\LitvakR' to group 'Performance Monitor Users' because the user is already in group.
+2015-08-26 07:49:30.048 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RabbitMqTransport
+Version: 3.0.0
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-26 07:49:30.073 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:49:30.076 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:49:30.082 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Secondary receiver for queue 'Dashboard.STP1COR3976LT' initiated with concurrency '1'
+2015-08-26 07:49:30.090 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.128 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:49:30.141 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:49:30.139 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:49:30.172 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:49:30.139 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:49:30.197 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:49:30.174 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:49:30.143 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:49:30.206 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:49:30.260 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.272 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.287 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.298 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.309 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.319 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.327 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.338 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.348 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:49:30.357 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:50:00.177 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 07:50:00.192 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:35.991 INFO  DefaultFactory Logging to 'C:\Users\LitvakR\Documents\mqtt-rabbitmq-nservicebus-signalr\src\Dashboard\App_Data\' with level Info
+2015-08-26 07:54:36.078 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-26 07:54:36.079 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-26 07:54:36.084 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-26 07:54:36.086 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-26 07:54:36.088 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-26 07:54:36.280 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 3/8/2016 12:00:00 AM
+2015-08-26 07:54:36.313 INFO  NServiceBus.Features.UnicastBus Number of messages found: 17
+2015-08-26 07:54:36.415 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.434 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.442 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.463 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.472 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.479 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.638 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'JABIL\LitvakR' to group 'Performance Monitor Users' because the user is already in group.
+2015-08-26 07:54:36.658 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RabbitMqTransport
+Version: 3.0.0
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-26 07:54:36.686 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:54:36.690 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:54:36.694 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Secondary receiver for queue 'Dashboard.STP1COR3976LT' initiated with concurrency '1'
+2015-08-26 07:54:36.719 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.740 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:54:36.768 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:54:36.764 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-26 07:54:36.791 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:54:36.789 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:54:36.799 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy No prefetch count configured, defaulting to 1 (the configured concurrency level)
+2015-08-26 07:54:36.805 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:54:36.807 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:54:36.830 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-26 07:54:36.851 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.861 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.871 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.880 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.892 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.902 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.915 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.923 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.930 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:36.940 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:56.788 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=0, text="End of stream", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at System.IO.BinaryWriter.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrame(Frame frame)
+   at RabbitMQ.Client.Framing.Impl.Connection.WriteFrame(Frame f)
+   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state) , going to reconnect
+2015-08-26 07:54:56.796 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:54:57.849 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:54:57.852 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:54:57.878 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:54:57.898 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:54:57.912 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:54:57.933 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:54:57.980 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:54:57.959 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:54:57.987 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:02.859 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:02.989 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:02.995 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:03.007 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:21.845 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 07:55:21.859 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:55:22.902 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:22.904 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:22.930 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:22.956 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:23.000 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:22.975 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:23.011 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:23.000 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:23.015 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:27.911 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:28.011 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:28.024 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:28.027 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:46.921 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 07:55:46.935 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:55:47.991 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:48.016 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:48.024 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:48.045 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:48.071 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:48.071 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:55:48.093 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:48.104 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:48.167 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:55:53.044 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:53.175 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:53.178 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:55:53.177 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:57:12.088 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 07:57:12.101 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:57:13.146 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:57:13.148 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:57:13.175 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:57:13.177 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:57:13.201 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:57:13.230 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:57:13.233 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:57:13.261 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:57:13.263 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:57:18.153 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:57:18.183 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:57:18.237 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:57:18.268 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:58:07.213 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 07:58:07.229 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:58:08.274 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:08.274 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:58:08.336 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:08.336 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:08.383 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:08.414 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:58:08.352 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:58:08.414 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:08.445 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:58:13.290 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:58:13.461 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:58:13.462 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:58:13.462 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:58:42.305 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 07:58:42.320 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 07:58:43.344 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:43.360 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:58:43.391 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:43.422 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:58:43.391 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:43.454 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:43.422 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 07:58:43.469 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:58:43.469 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 07:58:48.335 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:58:48.428 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:58:48.445 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 07:58:48.450 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:01:27.571 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 08:01:27.582 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 08:01:28.623 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:01:28.631 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:01:28.629 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:01:28.637 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:01:28.658 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:01:28.660 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:01:28.687 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:01:28.689 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:01:28.720 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:01:33.639 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:01:33.646 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:01:33.677 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:01:33.695 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:02:42.727 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 08:02:42.747 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 08:02:43.794 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:02:43.797 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:02:43.820 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:02:43.822 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:02:43.849 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:02:43.851 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:02:43.878 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:02:43.881 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:02:43.907 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:02:48.803 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:02:48.826 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:02:48.856 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:02:48.886 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:03:37.861 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 08:03:37.880 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 08:03:38.921 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:03:38.923 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:03:38.952 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:03:38.954 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:03:38.982 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:03:38.984 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:03:39.010 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:03:39.012 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:03:39.039 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:03:43.933 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:03:43.960 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:03:43.990 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:03:44.019 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:04:12.958 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 08:04:12.970 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 08:04:14.014 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:04:14.018 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:04:14.043 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:04:14.045 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:04:14.072 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:04:14.074 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:04:14.101 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:04:14.113 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:04:14.118 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:04:19.023 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:04:19.054 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:04:19.079 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:04:19.127 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:05:08.108 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 08:05:08.150 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 08:05:09.197 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:05:09.200 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:05:09.227 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:05:09.230 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:05:09.260 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:05:09.262 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:05:09.295 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:05:09.321 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:05:09.323 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:05:14.208 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:05:14.237 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:05:14.268 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:05:14.329 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:06:03.249 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 08:06:03.262 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 08:06:04.313 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:06:04.316 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:06:04.344 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:06:04.346 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:06:04.362 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:06:04.364 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:06:04.391 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:06:04.420 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:06:04.422 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:06:09.324 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:06:09.350 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:06:09.371 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:06:09.427 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:07:28.425 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Disconnected from RabbitMQ Broker, reason: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop() , going to reconnect
+2015-08-26 08:07:28.434 INFO  NServiceBus.Transports.RabbitMQ.RabbitMqConnectionManager Connected to RabbitMQ. Broker: 'localhost', Port: 5672, VHost: '/'
+2015-08-26 08:07:29.499 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.TimeoutsDispatcher
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:07:29.537 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:07:29.564 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Retries
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:07:29.537 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.Timeouts
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:07:29.565 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:07:29.564 ERROR NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy Failed to receive messages from Dashboard.STP1COR3976LT
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: SharedQueue closed
+   at RabbitMQ.Util.SharedQueue`1.EnsureIsOpen()
+   at RabbitMQ.Util.SharedQueue`1.Dequeue(Int32 millisecondsTimeout, T& result)
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.DequeueMessage(QueueingBasicConsumer consumer, Int32 dequeueTimeout) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 255
+   at NServiceBus.Transports.RabbitMQ.RabbitMqDequeueStrategy.ConsumeMessages(Object state) in c:\BuildAgent\work\ef98ad7376e3379a\src\NServiceBus.RabbitMQ\RabbitMqDequeueStrategy.cs:line 234
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-08-26 08:07:29.579 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:07:29.583 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:07:29.581 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now in the armed state
+2015-08-26 08:07:34.580 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:07:34.594 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:07:34.613 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
+2015-08-26 08:07:34.616 INFO  NServiceBus.CircuitBreakers.RepeatedFailuresOverTimeCircuitBreaker The circuit breaker for RabbitMqConnectivity is now disarmed
